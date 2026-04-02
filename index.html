@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="bg">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="AI автоматизация за социални мрежи и WordPress: постове, видеа и блогове с минимално участие от ваша страна. SEO, видимост и повече продажби." />
-  <title>AI Автоматизация за Социални Мрежи и WordPress — Постове, Видеа, Блог</title>
+  <meta name="description" content="AI automation for social media and WordPress: posts, videos, and blogs with minimal effort from you. SEO, visibility, and more sales." />
+  <title>AI Automation for Social Media and WordPress — Posts, Videos, Blog</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
     
     html, body {
       height: 100%;
-      scroll-behavior: smooth; /* ПЛАВНО СКРОЛИРАНЕ */
+      scroll-behavior: smooth; /* PLAIN SCROLLING */
     }
 
     body{
@@ -375,6 +375,30 @@
       color: var(--faint);
     }
 
+    /* Requirements List Styling */
+    .req-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .req-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    .req-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
     /* Reveal motion */
     .reveal{opacity:0; transform: translateY(10px); filter: blur(2px)}
     .reveal.in{
@@ -399,25 +423,25 @@
 <body>
   <header>
     <div class="container nav">
-      <a class="brandmark" href="#top" aria-label="Начало">
+      <a class="brandmark" href="#top" aria-label="Home">
         <span class="logo" aria-hidden="true"></span>
         <strong>AI Automation</strong>
-        <span data-i18n="brand.tag">за WordPress & Social</span>
+        <span data-i18n="brand.tag">for WordPress & Social</span>
       </a>
 
-      <nav aria-label="Основна навигация">
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
-          <li><a href="#how" data-i18n="nav.how">Как работи</a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing">Цени</a></li>
-          <li><a href="#faq" data-i18n="nav.faq">Въпроси</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Контакт</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-cta">
-        <a class="btn" href="#pricing" data-i18n="nav.cta.secondary">Виж цени</a>
-        <a class="btn primary" href="#contact" data-i18n="nav.cta.primary">Заяви разговор</a>
+        <a class="btn" href="#pricing" data-i18n="nav.cta.secondary">View Pricing</a>
+        <a class="btn primary" href="#contact" data-i18n="nav.cta.primary">Book a Call</a>
       </div>
     </div>
   </header>
@@ -429,39 +453,39 @@
           <div class="reveal">
             <span class="pill">
               <span class="dot" aria-hidden="true"></span>
-              <span data-i18n="hero.pill">Автоматизирай съдържанието си. Спести време. Публикувай по-умно.</span>
+              <span data-i18n="hero.pill">Automate your content. Save time. Publish smarter.</span>
             </span>
 
             <h1 data-i18n="hero.h1">
-              AI автоматизация за постове, видеа и блогове — с минимално участие от твоя страна.
+              AI automation for posts, videos, and blogs — with minimal effort from you.
             </h1>
 
             <p class="lead" data-i18n="hero.lead">
-              Подходящо за малки и средни сайтове, които искат постоянна активност в социалните мрежи и SEO-оптимизирано съдържание в WordPress — за повече видимост и продажби.
+              Suitable for small and medium websites that want constant activity on social media and SEO-optimized content in WordPress — for more visibility and sales.
             </p>
 
             <div class="hero-actions">
-              <a class="btn primary" href="#contact" data-i18n="hero.cta1">Получете план за автоматизация</a>
-              <a class="btn" href="#how" data-i18n="hero.cta2">Вижте примерен процес</a>
+              <a class="btn primary" href="#contact" data-i18n="hero.cta1">Get an automation plan</a>
+              <a class="btn" href="#how" data-i18n="hero.cta2">See an example process</a>
             </div>
 
-            <div class="trustline" aria-label="Кратка информация">
-              <span><b data-i18n="hero.trust.a">WordPress.org</b> <span data-i18n="hero.trust.a2">фокус</span></span>
+            <div class="trustline" aria-label="Brief information">
+              <span><b data-i18n="hero.trust.a">WordPress.org</b> <span data-i18n="hero.trust.a2">focus</span></span>
               <span>•</span>
-              <span><b data-i18n="hero.trust.b">TikTok / IG / FB / X</b> <span data-i18n="hero.trust.b2">и още</span></span>
+              <span><b data-i18n="hero.trust.b">TikTok / IG / FB / X</b> <span data-i18n="hero.trust.b2">and more</span></span>
               <span>•</span>
-              <span><b data-i18n="hero.trust.c">Drafts или Direct</b> <span data-i18n="hero.trust.c2">публикуване</span></span>
+              <span><b data-i18n="hero.trust.c">Drafts or Direct</b> <span data-i18n="hero.trust.c2">publishing</span></span>
             </div>
           </div>
 
-          <aside class="panel reveal" aria-label="Визуализация на автоматизация">
+          <aside class="panel reveal" aria-label="Automation visualization">
             <div class="panel-inner map">
               <div class="map-top">
                 <div class="map-title">
-                  <h3 data-i18n="hero.panel.title">Една папка. Много канали.</h3>
-                  <p data-i18n="hero.panel.desc">Качваш файл веднъж — системата публикува навсякъде по график, с SEO текст и хаштагове.</p>
+                  <h3 data-i18n="hero.panel.title">One folder. Many channels.</h3>
+                  <p data-i18n="hero.panel.desc">Upload a file once — the system publishes everywhere on schedule, with SEO text and hashtags.</p>
                 </div>
-                <span class="pill" title="Интеграции">
+                <span class="pill" title="Integrations">
                   <span class="dot" aria-hidden="true"></span>
                   <span data-i18n="hero.panel.pill">Dropbox → Social</span>
                 </span>
@@ -477,8 +501,8 @@
                     </svg>
                   </div>
                   <div>
-                    <b data-i18n="hero.panel.n1.t">Качване</b>
-                    <span data-i18n="hero.panel.n1.d">Видео + снимка в Dropbox</span>
+                    <b data-i18n="hero.panel.n1.t">Upload</b>
+                    <span data-i18n="hero.panel.n1.d">Video + photo in Dropbox</span>
                   </div>
                 </div>
 
@@ -491,8 +515,8 @@
                     </svg>
                   </div>
                   <div>
-                    <b data-i18n="hero.panel.n2.t">Планиране</b>
-                    <span data-i18n="hero.panel.n2.d">Оптимален час за региона</span>
+                    <b data-i18n="hero.panel.n2.t">Scheduling</b>
+                    <span data-i18n="hero.panel.n2.d">Optimal time for the region</span>
                   </div>
                 </div>
 
@@ -506,8 +530,8 @@
                     </svg>
                   </div>
                   <div>
-                    <b data-i18n="hero.panel.n3.t">Копирайтинг</b>
-                    <span data-i18n="hero.panel.n3.d">SEO текст и хаштагове</span>
+                    <b data-i18n="hero.panel.n3.t">Copywriting</b>
+                    <span data-i18n="hero.panel.n3.d">SEO text and hashtags</span>
                   </div>
                 </div>
               </div>
@@ -520,22 +544,22 @@
     <section id="services">
       <div class="container reveal">
         <div class="section-head">
-          <h2>Нашите Услуги</h2>
+          <h2>Our Services</h2>
         </div>
-        <p>Ние предлагаме цялостни решения за автоматизация на вашето съдържание, за да се фокусирате върху развитието на бизнеса си.</p>
+        <p>We offer comprehensive solutions to automate your content, so you can focus on growing your business.</p>
         
         <div class="feature-list">
           <div class="feature">
-            <h3>AI Генериране на текст</h3>
-            <p>Автоматично създаване на ангажиращи SEO оптимизирани статии за вашия WordPress блог и социални мрежи.</p>
+            <h3>AI Text Generation</h3>
+            <p>Automatically create engaging, SEO-optimized articles for your WordPress blog and social media profiles.</p>
           </div>
           <div class="feature">
-            <h3>Автоматично публикуване</h3>
-            <p>Свързваме вашите профили и публикуваме по предварително зададен график в най-активните часове.</p>
+            <h3>Automated Publishing</h3>
+            <p>We connect your profiles and publish according to a pre-set schedule during peak activity hours.</p>
           </div>
           <div class="feature">
-            <h3>Видео и Изображения</h3>
-            <p>Системата автоматично обработва вашите файлове от Dropbox и ги форматира за TikTok, Reels и Shorts.</p>
+            <h3>Video & Images</h3>
+            <p>The system automatically processes your files from Dropbox and formats them for TikTok, Reels, and Shorts.</p>
           </div>
         </div>
       </div>
@@ -544,110 +568,135 @@
     <section id="how" style="background: rgba(255,255,255,0.02);">
       <div class="container reveal">
         <div class="section-head">
-          <h2>Как работи процесът</h2>
+          <h2>How the process works</h2>
         </div>
-        <p>Лесно, бързо и без необходимост от технически познания.</p>
+        <p>Easy, fast, and no technical skills required.</p>
 
         <div class="timeline">
           <div class="step">
-            <span class="k">Стъпка 1</span>
+            <span class="k">Step 1</span>
             <div>
-              <h3>Качване на сурови файлове</h3>
-              <p>Просто поставете вашите видеа или снимки в споделена папка (напр. Dropbox или Google Drive).</p>
+              <h3>Upload raw files</h3>
+              <p>Simply drop your videos or photos into a shared folder (e.g., Dropbox or Google Drive).</p>
             </div>
           </div>
           <div class="step">
-            <span class="k">Стъпка 2</span>
+            <span class="k">Step 2</span>
             <div>
-              <h3>AI Обработка</h3>
-              <p>Нашият изкуствен интелект анализира съдържанието, генерира описания, хаштагове и SEO заглавия.</p>
+              <h3>AI Processing</h3>
+              <p>Our AI analyzes the content, generates descriptions, hashtags, and SEO titles automatically.</p>
             </div>
           </div>
           <div class="step">
-            <span class="k">Стъпка 3</span>
+            <span class="k">Step 3</span>
             <div>
-              <h3>Публикуване и Анализ</h3>
-              <p>Съдържанието се разпространява във всичките ви канали, а вие получавате отчет за резултатите.</p>
+              <h3>Publishing & Analytics</h3>
+              <p>Your content is distributed across all your channels, and you receive a performance report.</p>
             </div>
           </div>
+        </div>
+
+        <div style="margin-top: 50px; text-align: center; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 40px;">
+          <h3 style="margin-bottom: 20px; font-size: 1.3rem; color: var(--text);">Example Automation Workflow</h3>
+          <img src="example-ai-automation.jpg" alt="Example AI Automation Workflow" style="width: 100%; max-width: 900px; height: auto; border-radius: 16px; border: 1px solid var(--stroke); box-shadow: var(--shadow); background: white;">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="requirements" style="border-top: 1px solid var(--stroke);">
+      <div class="container reveal">
+        <div class="section-head">
+          <h2>Requirements</h2>
+        </div>
+        <p style="margin-bottom: 25px;">Before we can begin automating your content, please ensure the following requirements are met:</p>
+        
+        <div class="panel" style="padding: 30px;">
+          <ul class="req-list">
+            <li>You must have a registered account on the platform(s) where you want to post.</li>
+            <li>You must have an <a href="https://platform.openai.com/" target="_blank" style="color: var(--brand); text-decoration: underline;">OpenAI API</a> account with a minimum balance of $5.</li>
+            <li>For Facebook and Instagram, a <strong>business account</strong> is required, and both must be connected through Meta.</li>
+            <li>We will need access to each platform you want us to work with. <em>Note: You may occasionally need to confirm logins via your phone, so please keep this in mind once we begin.</em></li>
+            <li>For a WordPress blog, we will need <strong>administrator access</strong>, and an additional plugin must be installed to allow communication with the automation scenario.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="pricing">
+    <section id="pricing" style="background: rgba(255,255,255,0.02);">
       <div class="container reveal">
         <div class="section-head">
-          <h2>Ценови планове</h2>
+          <h2>Pricing Plans</h2>
         </div>
-        <p>Изберете план, който отговаря на нуждите на вашия бизнес.</p>
+        <p>Choose a plan that fits your business needs.</p>
 
         <div class="grid pricing">
           <div class="panel">
             <div class="panel-inner price">
-              <h3>Стартов План</h3>
-              <p class="big">99 евро.<span style="font-size: 1rem; color: var(--muted)"> / мес</span></p>
-              <p class="sub">Перфектен за малки бизнеси и лични блогове.</p>
+              <h3>Starter Plan</h3>
+              <p class="big">&euro;99<span style="font-size: 1rem; color: var(--muted)"> / mo</span></p>
+              <p class="sub">Perfect for small businesses and personal blogs.</p>
               <ul>
-                <li>До 15 публикации месечно</li>
-                <li>Автоматизация за 2 социални мрежи</li>
-                <li>Интеграция с WordPress</li>
-                <li>Базов AI копирайтинг</li>
+                <li>Up to 15 posts per month</li>
+                <li>Automation for 2 social networks</li>
+                <li>WordPress integration</li>
+                <li>Basic AI copywriting</li>
               </ul>
-              <a class="btn" href="#contact" style="margin-top: 15px;">Избери План</a>
+              <a class="btn" href="#contact" style="margin-top: 15px;">Choose Plan</a>
             </div>
           </div>
 
           <div class="panel" style="border-color: rgba(199,255,107,.45);">
             <div class="panel-inner price">
-              <span class="pill" style="align-self: flex-start; margin-bottom: 10px; background: rgba(199,255,107,.14); color: var(--brand); border-color: transparent;">Най-популярен</span>
-              <h3>Про План</h3>
-              <p class="big">199 евро.<span style="font-size: 1rem; color: var(--muted)"> / мес</span></p>
-              <p class="sub">За растящи марки, които се нуждаят от максимално покритие.</p>
+              <span class="pill" style="align-self: flex-start; margin-bottom: 10px; background: rgba(199,255,107,.14); color: var(--brand); border-color: transparent;">Most Popular</span>
+              <h3>Pro Plan</h3>
+              <p class="big">&euro;199<span style="font-size: 1rem; color: var(--muted)"> / mo</span></p>
+              <p class="sub">For growing brands that need maximum coverage.</p>
               <ul>
-                <li>Неограничени публикации</li>
-                <li>Всички социални мрежи (TikTok, IG, FB, X)</li>
-                <li>SEO оптимизация на експертно ниво</li>
-                <li>Приоритетна поддръжка 24/7</li>
+                <li>30 posts a month</li>
+                <li>All social networks (TikTok, IG, FB, X)</li>
+                <li>Expert-level SEO optimization</li>
+                <li>24/7 priority support</li>
               </ul>
-              <a class="btn primary" href="#contact" style="margin-top: 15px;">Избери План</a>
+              <a class="btn primary" href="#contact" style="margin-top: 15px;">Choose Plan</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" style="background: rgba(255,255,255,0.02);">
+    <section id="faq">
       <div class="container reveal">
         <div class="section-head">
-          <h2>Често задавани въпроси</h2>
+          <h2>Frequently Asked Questions</h2>
         </div>
         
         <div style="margin-top: 30px;">
           <div style="border-top: 1px solid var(--stroke); padding: 20px 0;">
-            <h3 style="margin:0 0 10px; font-size: 1.1rem;">Трябва ли да имам технически познания?</h3>
-            <p style="margin:0; color: var(--muted); line-height:1.6;">Не, системата е създадена да бъде максимално лесна за употреба. Единственото, което трябва да правите, е да качвате файловете си в определена папка.</p>
+            <h3 style="margin:0 0 10px; font-size: 1.1rem;">Do I need technical skills?</h3>
+            <p style="margin:0; color: var(--muted); line-height:1.6;">No, the system is designed to be as user-friendly as possible. All you have to do is upload your files to a specific folder.</p>
           </div>
           <div style="border-top: 1px solid var(--stroke); border-bottom: 1px solid var(--stroke); padding: 20px 0;">
-            <h3 style="margin:0 0 10px; font-size: 1.1rem;">Мога ли да редактирам текстовете преди публикуване?</h3>
-            <p style="margin:0; color: var(--muted); line-height:1.6;">Да! Всички генерирани текстове могат да бъдат запазвани като "Чернови" (Drafts), за да ги прегледате и одобрите ръчно, преди да бъдат публикувани.</p>
+            <h3 style="margin:0 0 10px; font-size: 1.1rem;">Can I edit the texts before publishing?</h3>
+            <p style="margin:0; color: var(--muted); line-height:1.6;">Yes! All generated texts can be saved as Drafts so you can review and approve them manually before they go live.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="background: rgba(255,255,255,0.02);">
       <div class="container reveal">
         <div class="section-head">
-          <h2>Свържете се с нас</h2>
+          <h2>Get in Touch</h2>
         </div>
-        <p>Имате въпроси или искате персонализирана оферта? Изпратете ни съобщение чрез формата по-долу или ни пишете директно на <a href="mailto:office.lltd@gmail.com" style="color: var(--brand); text-decoration: underline;">office.lltd@gmail.com</a>.</p>
+        <p>Have questions or want a custom quote? Send us a message using the form below or email us directly at <a href="mailto:office.lltd@gmail.com" style="color: var(--brand); text-decoration: underline;">office.lltd@gmail.com</a>.</p>
 
         <div style="max-width: 600px; margin-top: 30px;">
           <div style="display: flex; flex-direction: column; gap: 15px;">
-            <input type="text" placeholder="Вашето име" style="padding: 15px; border-radius: 12px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.05); color: white; width: 100%;">
-            <input type="email" placeholder="Вашият имейл" style="padding: 15px; border-radius: 12px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.05); color: white; width: 100%;">
-            <textarea placeholder="Как можем да ви помогнем?" rows="5" style="padding: 15px; border-radius: 12px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.05); color: white; width: 100%; resize: vertical;"></textarea>
-            <button class="btn primary" style="padding: 15px; font-size: 1.1rem; border: none; width: 100%;">Изпрати запитване</button>
+            <input type="text" placeholder="Your Name" style="padding: 15px; border-radius: 12px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.05); color: white; width: 100%;">
+            <input type="email" placeholder="Your Email" style="padding: 15px; border-radius: 12px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.05); color: white; width: 100%;">
+            <textarea placeholder="How can we help you?" rows="5" style="padding: 15px; border-radius: 12px; border: 1px solid var(--stroke); background: rgba(255,255,255,0.05); color: white; width: 100%; resize: vertical;"></textarea>
+            <button class="btn primary" style="padding: 15px; font-size: 1.1rem; border: none; width: 100%;">Send Message</button>
           </div>
         </div>
       </div>
@@ -657,16 +706,13 @@
 
   <footer style="border-top: 1px solid var(--stroke); padding: 40px 0; text-align: center; color: var(--muted);">
     <div class="container">
-      <p>&copy; 2026 AI Automation. Всички права запазени.</p>
+      <p>&copy; 2026 AI Automation. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // Reveal animation
     document.addEventListener("DOMContentLoaded", function() {
       const reveals = document.querySelectorAll(".reveal");
-      
-      // Make elements visible immediately for now
       reveals.forEach(element => {
         element.classList.add("in");
       });
